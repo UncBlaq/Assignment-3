@@ -102,6 +102,8 @@ main {
 >section:first-of-type>form>button:hover,  >section:first-of-type>form>button:focus {
     background-color: hsla(173, 96%, 38%, 1);
     cursor: pointer;
+    border: none;
+    outline: 2px solid hsl(207.27, 100%, 50%);
 }
 >section:first-of-type>form>p:first-of-type {
     margin-left: 31.5px;
