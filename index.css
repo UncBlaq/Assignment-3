@@ -30,7 +30,7 @@ header {
         offset: 16px;
     }
     >nav>a:hover {
-        text-decoration: underline 1.5px blue;
+        text-decoration: underline 1.5px hsla(204, 84%, 41%, 1);
     }
     >nav>a:nth-last-child(1) {
         padding: 10px;
