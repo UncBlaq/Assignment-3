@@ -30,15 +30,21 @@ header {
         offset: 16px;
     }
     >nav>a:hover {
-        text-decoration: underline 1.5px hsla(204, 84%, 41%, 1);
+        color: #3498db;
+        transition: color 1s ease-out;
+        text-decoration: underline;
     }
     >nav>a:nth-last-child(1) {
         padding: 10px;
         border:2px solid black ;
         border-radius: 5px;
     }
-    >nav>a:nth-last-child(1):hover,  >nav>a:nth-last-child(1):focus{
+   >nav>a:nth-last-child(1):focus{
         border: none;
+    }
+    >nav>a:nth-last-child(1):hover {
+        background-color: rgb(12, 11, 11);
+        text-decoration: none;
     }
     >hr {
         width: 90%;
@@ -162,6 +168,8 @@ main {
     position: relative;
     top: -20px;
     left: -4px;
+    font-size: larger;
+    font-weight: bold;
  }
 
  >section:nth-child(2)>p {
@@ -217,9 +225,7 @@ main {
     &[type="email"] {
         width: 350px;
     }
-    &#creditcard {
-        width: 450px;  
-    }
+
 }
 
 footer {
@@ -233,6 +239,35 @@ footer {
        margin: 10px;
       
      }
+
+
+     #creditcard:focus {
+        border: none;
+        outline: 2px solid hsl(207.27, 100%, 50%);
+     }
+     #input-wrap {
+        display: flex;
+        gap: 0px;
+        width: 450px;
+        border-radius: 5px;
+        border: 1px solid  hsla(216, 16%, 94%, 1);
+        &:focus, &:hover {
+            border: none;
+        outline: 2px solid hsl(207.27, 100%, 50%);
+        }
+     }
+
+.no-focus {
+    border-radius: none;
+}
+.no-focus:focus, .no-focus:hover {
+border: none !important;
+outline: none;
+}
+
+#lastinput {
+    padding-left: 0px;
+}
 
 
 

@@ -51,8 +51,12 @@
            <h2 class="info"><span>2</span>Your Payment Information</h2>
            <div aria-label="creditcard">
             <label for="">Credit Card</label><br>
-            <input type="text" id="creditcard" placeholder="Card Number                       
-                                              MM/YY  CVC">
+            <div id="input-wrap">
+                <!-- removed id creditcard from input -->
+            <input type="text" placeholder="Card Number"  class="no-focus" style=" width: 300px;">
+            <input type="text" placeholder="MM/YY" class="no-focus" style=" width: 100px;"> 
+            <input type="text" placeholder="CVC" class="no-focus" style=" width: 50px;" id="lastinput">
+        </div>
            </div>
            <hr>
            <button>Buy WP Pusher</button>
